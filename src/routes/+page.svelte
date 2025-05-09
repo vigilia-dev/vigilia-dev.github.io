@@ -1,5 +1,45 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
+
+	let email = '';
+	let status = '';
+	let loading = false;
+
+	async function handleSubmit(e: Event) {
+		e.preventDefault();
+		loading = true;
+		status = '';
+
+		try {
+			const response = await fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: JSON.stringify({
+					access_key: 'YOUR-ACCESS-KEY-HERE', // Replace with your Web3Forms access key
+					email: email,
+					subject: 'New Waitlist Signup',
+					message: `New waitlist signup from: ${email}`,
+					from_name: 'Vigilia AI Waitlist'
+				})
+			});
+
+			const result = await response.json();
+			if (result.success) {
+				status = 'success';
+				email = '';
+			} else {
+				status = 'error';
+			}
+		} catch (error) {
+			status = 'error';
+		} finally {
+			loading = false;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -23,17 +63,34 @@
 				
 				<!-- Waitlist Form -->
 				<div class="max-w-md mx-auto">
-					<form class="flex flex-col sm:flex-row gap-3" action="#" method="POST">
+					<form on:submit={handleSubmit} class="flex flex-col sm:flex-row gap-3">
 						<input
 							type="email"
+							bind:value={email}
 							class="input flex-grow"
 							placeholder="Enter your email"
 							required
+							disabled={loading}
 						/>
-						<button type="submit" class="btn btn-primary whitespace-nowrap">
-							Join Waitlist
+						<button 
+							type="submit" 
+							class="btn btn-primary whitespace-nowrap"
+							disabled={loading}
+						>
+							{#if loading}
+								<span class="inline-block animate-spin mr-2">⟳</span>
+								Processing...
+							{:else}
+								Join Waitlist
+							{/if}
 						</button>
 					</form>
+
+					{#if status === 'success'}
+						<p class="mt-4 text-green-400">Thanks for joining! We'll be in touch soon.</p>
+					{:else if status === 'error'}
+						<p class="mt-4 text-red-400">Something went wrong. Please try again.</p>
+					{/if}
 				</div>
 			</div>
 		</div>
