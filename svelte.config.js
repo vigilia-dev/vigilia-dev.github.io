@@ -3,7 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://svelte.dev/docs/kit/integrations
+	// Consult https://svelte.dev/docs/integrations
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
@@ -14,7 +14,7 @@ const config = {
 			assets: 'build',
 			fallback: 'index.html',
 			precompress: false,
-			strict: true
+			strict: false
 		}),
 		// For GitHub Pages deployment
 		paths: {
