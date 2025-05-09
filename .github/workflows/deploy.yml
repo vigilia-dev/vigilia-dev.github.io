@@ -43,10 +43,13 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: build
+ - name: Upload artifacts
+  uses: actions/upload-artifact@v3
+  with:
+    name: your-artifact-name
+    path: path/to/artifact
+
+
 
   deploy:
     environment:
