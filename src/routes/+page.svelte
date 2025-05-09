@@ -19,7 +19,7 @@
 					'Accept': 'application/json'
 				},
 				body: JSON.stringify({
-					access_key: 'YOUR-ACCESS-KEY-HERE', // Replace with your Web3Forms access key
+					access_key: '8593b668-859e-4370-9fac-9ddd59c0483e',
 					email: email,
 					subject: 'New Waitlist Signup',
 					message: `New waitlist signup from: ${email}`,
@@ -43,26 +43,46 @@
 </script>
 
 <svelte:head>
-	<title>Vigilia AI - Secure Your AI Systems</title>
+	<title>Vigilia AI - Scan, Classify, Secure The AI Frontier</title>
 	<meta name="description" content="Vigilia AI helps you secure your AI systems with advanced monitoring and protection." />
 </svelte:head>
 
-<div class="relative min-h-screen">
+<div class="relative min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
+	<!-- Background Pattern -->
+	<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,#ffffff_1px,transparent_0)] bg-[size:40px_40px]"></div>
+
 	<!-- Hero Section -->
 	<section class="relative pt-32 md:pt-40">
 		<div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center">
 				<h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-secondary-400">
-						Secure Your AI Systems
-					</span>
+					<div class="overflow-hidden">
+						<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-white to-secondary-400 inline-block animate-[slideInFromBottom_0.8s_ease-out_forwards]" style="transform: translateY(100%); animation-delay: 0.3s;">
+							Scan, Classify, Secure
+						</span>
+					</div>
+					<div class="overflow-hidden mt-2">
+						<span class="bg-clip-text text-transparent bg-gradient-to-r from-secondary-300 to-primary-300 inline-block animate-[slideInFromBottom_0.8s_ease-out_forwards]" style="transform: translateY(100%); animation-delay: 0.6s;">
+							The AI Frontier
+						</span>
+					</div>
 				</h1>
-				<p class="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto mb-8">
-					Protect your AI models and systems from threats with advanced monitoring and security solutions.
-				</p>
-				
+
+				<style>
+					@keyframes slideInFromBottom {
+						0% {
+							transform: translateY(100%);
+							opacity: 0;
+						}
+						100% {
+							transform: translateY(0);
+							opacity: 1;
+						}
+					}
+				</style>
+
 				<!-- Waitlist Form -->
-				<div class="max-w-md mx-auto">
+				<div class="max-w-md mx-auto animate-[fadeIn_1s_ease-out_forwards]" style="opacity: 0; animation-delay: 1.2s;">
 					<form on:submit={handleSubmit} class="flex flex-col sm:flex-row gap-3">
 						<input
 							type="email"
@@ -92,6 +112,19 @@
 						<p class="mt-4 text-red-400">Something went wrong. Please try again.</p>
 					{/if}
 				</div>
+
+				<style>
+					@keyframes fadeIn {
+						0% {
+							opacity: 0;
+							transform: translateY(10px);
+						}
+						100% {
+							opacity: 1;
+							transform: translateY(0);
+						}
+					}
+				</style>
 			</div>
 		</div>
 	</section>

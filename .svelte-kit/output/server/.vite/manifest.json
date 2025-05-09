@@ -5,8 +5,7 @@
     "src": ".svelte-kit/generated/server/internal.js",
     "isEntry": true,
     "imports": [
-      "_internal.js",
-      "_paths.js"
+      "_internal.js"
     ]
   },
   "_exports.js": {
@@ -18,13 +17,8 @@
     "name": "internal",
     "imports": [
       "_ssr.js",
-      "_ssr2.js",
-      "_paths.js"
+      "_ssr2.js"
     ]
-  },
-  "_paths.js": {
-    "file": "chunks/paths.js",
-    "name": "paths"
   },
   "_ssr.js": {
     "file": "chunks/ssr.js",
@@ -33,15 +27,6 @@
   "_ssr2.js": {
     "file": "chunks/ssr2.js",
     "name": "ssr"
-  },
-  "_stores.js": {
-    "file": "chunks/stores.js",
-    "name": "stores",
-    "imports": [
-      "_ssr.js",
-      "_exports.js",
-      "_ssr2.js"
-    ]
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff": {
     "file": "_app/immutable/assets/fira-mono-all-400-normal.B2mvLtSD.woff",
@@ -78,7 +63,8 @@
     "isEntry": true,
     "imports": [
       "_ssr.js",
-      "_stores.js"
+      "_exports.js",
+      "_ssr2.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -87,10 +73,9 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
-      "_paths.js",
+      "_internal.js",
       "_exports.js",
-      "_ssr.js",
-      "_internal.js"
+      "_ssr.js"
     ]
   },
   "src/routes/+layout.js": {
@@ -105,12 +90,10 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_ssr.js",
-      "_stores.js",
-      "_paths.js"
+      "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.cmZZm2_T.css"
+      "_app/immutable/assets/_layout.DHZInN00.css"
     ],
     "assets": [
       "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal.B04YIrm4.woff2",

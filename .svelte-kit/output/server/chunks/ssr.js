@@ -37,9 +37,6 @@ function setContext(key, context) {
 function getContext(key) {
   return get_current_component().$$.context.get(key);
 }
-function ensure_array_like(array_like_or_iterator) {
-  return array_like_or_iterator?.length !== void 0 ? array_like_or_iterator : Array.from(array_like_or_iterator);
-}
 const ATTR_REGEX = /[&"<]/g;
 const CONTENT_REGEX = /[&<]/g;
 function escape(value, is_attr = false) {
@@ -55,14 +52,6 @@ function escape(value, is_attr = false) {
     last = i + 1;
   }
   return escaped + str.substring(last);
-}
-function each(items, fn) {
-  items = ensure_array_like(items);
-  let str = "";
-  for (let i = 0; i < items.length; i += 1) {
-    str += fn(items[i], i);
-  }
-  return str;
 }
 const missing_component = {
   $$render: () => ""
@@ -114,7 +103,6 @@ function create_ssr_component(fn) {
   };
 }
 function add_attribute(name, value, boolean) {
-  if (value == null || boolean) return "";
   const assignment = `="${escape(value, true)}"`;
   return ` ${name}${assignment}`;
 }
@@ -123,8 +111,7 @@ export {
   subscribe as b,
   create_ssr_component as c,
   add_attribute as d,
-  each as e,
-  escape as f,
+  escape as e,
   getContext as g,
   missing_component as m,
   noop as n,
