@@ -7,8 +7,5 @@
 	"/about": [
 		"src/routes/about/+page.ts",
 		"src/routes/+layout.js"
-	],
-	"/contact": [
-		"src/routes/+layout.js"
 	]
 }

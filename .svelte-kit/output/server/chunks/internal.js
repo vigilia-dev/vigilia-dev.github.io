@@ -1,6 +1,6 @@
 import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./ssr.js";
 import { a as afterUpdate } from "./ssr2.js";
-let base = "/vigilia.github.io";
+let base = "/vigilia-dev.github.io";
 let assets = base;
 const app_dir = "_app";
 const initial = { base, assets };
@@ -189,7 +189,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1q1273w"
+  version_hash: "10j56ja"
 };
 async function get_hooks() {
   let handle;

@@ -17,7 +17,7 @@ const config = {
 		}),
 		// For GitHub Pages deployment
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/vigilia.github.io' : ''
+			base: '/vigilia-dev.github.io'
 		}
 	}
 };

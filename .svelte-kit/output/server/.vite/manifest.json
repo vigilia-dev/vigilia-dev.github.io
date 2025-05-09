@@ -107,7 +107,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BkUy6AOe.css"
+      "_app/immutable/assets/_layout.Q7ObublA.css"
     ],
     "assets": [
       "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal.B04YIrm4.woff2",
@@ -141,15 +141,6 @@
     "isEntry": true,
     "imports": [
       "_false.js"
-    ]
-  },
-  "src/routes/contact/+page.svelte": {
-    "file": "entries/pages/contact/_page.svelte.js",
-    "name": "entries/pages/contact/_page.svelte",
-    "src": "src/routes/contact/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr.js"
     ]
   }
 }
