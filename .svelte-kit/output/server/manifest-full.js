@@ -10,7 +10,7 @@ return {
 	assets: new Set([".nojekyll","CNAME","apple-touch-icon-precomposed.png","apple-touch-icon.png","favicon.png","robots.txt","v-logo.svg"]),
 	mimeTypes: {".png":"image/png",".txt":"text/plain",".svg":"image/svg+xml"},
 	_: {
-		client: {start:"_app/immutable/entry/start.2bfce8d5.js",app:"_app/immutable/entry/app.18df33e5.js",imports:["_app/immutable/entry/start.2bfce8d5.js","_app/immutable/chunks/8b28b7c6.js","_app/immutable/chunks/287691d9.js","_app/immutable/entry/app.18df33e5.js","_app/immutable/chunks/287691d9.js","_app/immutable/chunks/db63223e.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.12cc7b61.js",app:"_app/immutable/entry/app.9ea0500f.js",imports:["_app/immutable/entry/start.12cc7b61.js","_app/immutable/chunks/9ec0055b.js","_app/immutable/chunks/287691d9.js","_app/immutable/entry/app.9ea0500f.js","_app/immutable/chunks/287691d9.js","_app/immutable/chunks/db63223e.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
