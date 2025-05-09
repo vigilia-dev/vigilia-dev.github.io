@@ -15,9 +15,8 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		// For GitHub Pages deployment
 		paths: {
-			base: '/vigilia-dev.github.io'
+			base: ''  // Remove the base path since we're using the root domain
 		}
 	}
 };
