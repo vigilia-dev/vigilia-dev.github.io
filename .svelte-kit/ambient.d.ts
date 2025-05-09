@@ -27,54 +27,33 @@
  */
 declare module '$env/static/private' {
 	export const NVM_INC: string;
-<<<<<<< HEAD
 	export const TERM_PROGRAM: string;
 	export const rvm_bin_path: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const GEM_HOME: string;
 	export const NVM_CD_FLAGS: string;
-=======
-	export const NIX_PROFILES: string;
-	export const TERM_PROGRAM: string;
-	export const rvm_bin_path: string;
-	export const NODE: string;
-	export const GEM_HOME: string;
-	export const NVM_CD_FLAGS: string;
-	export const INIT_CWD: string;
->>>>>>> 85187d1 (add)
 	export const TERM: string;
 	export const SHELL: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
-<<<<<<< HEAD
 	export const npm_config_global_prefix: string;
-=======
-	export const npm_config_metrics_registry: string;
->>>>>>> 85187d1 (add)
 	export const CONDA_SHLVL: string;
-	export const npm_config_global_prefix: string;
 	export const TERM_PROGRAM_VERSION: string;
-<<<<<<< HEAD
 	export const ZDOTDIR: string;
 	export const CURSOR_TRACE_ID: string;
-=======
->>>>>>> 85187d1 (add)
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const MallocNanoZone: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
-	export const ZSH: string;
-<<<<<<< HEAD
-=======
 	export const npm_config_local_prefix: string;
->>>>>>> 85187d1 (add)
+	export const ZSH: string;
 	export const NVM_DIR: string;
 	export const USER: string;
 	export const LS_COLORS: string;
 	export const COMMAND_MODE: string;
-	export const CONDA_EXE: string;
 	export const npm_config_globalconfig: string;
+	export const CONDA_EXE: string;
 	export const rvm_path: string;
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
@@ -84,57 +63,35 @@ declare module '$env/static/private' {
 	export const LSCOLORS: string;
 	export const rvm_prefix: string;
 	export const PATH: string;
+	export const npm_package_json: string;
 	export const _: string;
-<<<<<<< HEAD
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
 	export const USER_ZDOTDIR: string;
-=======
-	export const npm_package_json: string;
->>>>>>> 85187d1 (add)
 	export const __CFBundleIdentifier: string;
-	export const npm_config_init_module: string;
-	export const npm_config_userconfig: string;
+	export const npm_command: string;
 	export const PWD: string;
-<<<<<<< HEAD
 	export const DISABLE_AUTO_UPDATE: string;
 	export const npm_lifecycle_event: string;
-=======
-	export const npm_command: string;
->>>>>>> 85187d1 (add)
 	export const EDITOR: string;
-	export const npm_lifecycle_event: string;
+	export const npm_package_name: string;
 	export const LANG: string;
-<<<<<<< HEAD
 	export const npm_config_npm_version: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
-=======
-	export const npm_package_name: string;
-	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-	export const XPC_FLAGS: string;
-	export const NIX_SSL_CERT_FILE: string;
->>>>>>> 85187d1 (add)
 	export const RUBY_ENGINE: string;
+	export const npm_config_node_gyp: string;
 	export const RBENV_SHELL: string;
-<<<<<<< HEAD
 	export const npm_package_version: string;
 	export const _CE_M: string;
 	export const XPC_SERVICE_NAME: string;
 	export const VSCODE_INJECTION: string;
-=======
-	export const npm_config_node_gyp: string;
-	export const _CE_M: string;
-	export const XPC_SERVICE_NAME: string;
-	export const npm_package_version: string;
->>>>>>> 85187d1 (add)
 	export const rvm_version: string;
 	export const SHLVL: string;
 	export const HOME: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const GEM_ROOT: string;
 	export const HOMEBREW_PREFIX: string;
-<<<<<<< HEAD
 	export const npm_config_cache: string;
 	export const CONDA_PYTHON_EXE: string;
 	export const LESS: string;
@@ -142,16 +99,6 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const GEM_PATH: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
-=======
-	export const CONDA_PYTHON_EXE: string;
-	export const LESS: string;
-	export const LOGNAME: string;
-	export const npm_config_cache: string;
-	export const npm_lifecycle_script: string;
-	export const XDG_DATA_DIRS: string;
-	export const VSCODE_GIT_IPC_HANDLE: string;
-	export const GEM_PATH: string;
->>>>>>> 85187d1 (add)
 	export const RUBY_ROOT: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
@@ -161,9 +108,9 @@ declare module '$env/static/private' {
 	export const HOMEBREW_CELLAR: string;
 	export const RUBYOPT: string;
 	export const RUBY_VERSION: string;
-	export const COLORTERM: string;
-	export const npm_config_prefix: string;
 	export const npm_node_execpath: string;
+	export const npm_config_prefix: string;
+	export const COLORTERM: string;
 	export const NODE_ENV: string;
 }
 
@@ -195,54 +142,33 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		NVM_INC: string;
-<<<<<<< HEAD
 		TERM_PROGRAM: string;
 		rvm_bin_path: string;
 		NODE: string;
 		INIT_CWD: string;
 		GEM_HOME: string;
 		NVM_CD_FLAGS: string;
-=======
-		NIX_PROFILES: string;
-		TERM_PROGRAM: string;
-		rvm_bin_path: string;
-		NODE: string;
-		GEM_HOME: string;
-		NVM_CD_FLAGS: string;
-		INIT_CWD: string;
->>>>>>> 85187d1 (add)
 		TERM: string;
 		SHELL: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
-<<<<<<< HEAD
 		npm_config_global_prefix: string;
-=======
-		npm_config_metrics_registry: string;
->>>>>>> 85187d1 (add)
 		CONDA_SHLVL: string;
-		npm_config_global_prefix: string;
 		TERM_PROGRAM_VERSION: string;
-<<<<<<< HEAD
 		ZDOTDIR: string;
 		CURSOR_TRACE_ID: string;
-=======
->>>>>>> 85187d1 (add)
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		MallocNanoZone: string;
 		COLOR: string;
 		npm_config_noproxy: string;
-		ZSH: string;
-<<<<<<< HEAD
-=======
 		npm_config_local_prefix: string;
->>>>>>> 85187d1 (add)
+		ZSH: string;
 		NVM_DIR: string;
 		USER: string;
 		LS_COLORS: string;
 		COMMAND_MODE: string;
-		CONDA_EXE: string;
 		npm_config_globalconfig: string;
+		CONDA_EXE: string;
 		rvm_path: string;
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
@@ -252,57 +178,35 @@ declare module '$env/dynamic/private' {
 		LSCOLORS: string;
 		rvm_prefix: string;
 		PATH: string;
+		npm_package_json: string;
 		_: string;
-<<<<<<< HEAD
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
 		USER_ZDOTDIR: string;
-=======
-		npm_package_json: string;
->>>>>>> 85187d1 (add)
 		__CFBundleIdentifier: string;
-		npm_config_init_module: string;
-		npm_config_userconfig: string;
+		npm_command: string;
 		PWD: string;
-<<<<<<< HEAD
 		DISABLE_AUTO_UPDATE: string;
 		npm_lifecycle_event: string;
-=======
-		npm_command: string;
->>>>>>> 85187d1 (add)
 		EDITOR: string;
-		npm_lifecycle_event: string;
+		npm_package_name: string;
 		LANG: string;
-<<<<<<< HEAD
 		npm_config_npm_version: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
-=======
-		npm_package_name: string;
-		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-		XPC_FLAGS: string;
-		NIX_SSL_CERT_FILE: string;
->>>>>>> 85187d1 (add)
 		RUBY_ENGINE: string;
+		npm_config_node_gyp: string;
 		RBENV_SHELL: string;
-<<<<<<< HEAD
 		npm_package_version: string;
 		_CE_M: string;
 		XPC_SERVICE_NAME: string;
 		VSCODE_INJECTION: string;
-=======
-		npm_config_node_gyp: string;
-		_CE_M: string;
-		XPC_SERVICE_NAME: string;
-		npm_package_version: string;
->>>>>>> 85187d1 (add)
 		rvm_version: string;
 		SHLVL: string;
 		HOME: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		GEM_ROOT: string;
 		HOMEBREW_PREFIX: string;
-<<<<<<< HEAD
 		npm_config_cache: string;
 		CONDA_PYTHON_EXE: string;
 		LESS: string;
@@ -310,16 +214,6 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		GEM_PATH: string;
 		VSCODE_GIT_IPC_HANDLE: string;
-=======
-		CONDA_PYTHON_EXE: string;
-		LESS: string;
-		LOGNAME: string;
-		npm_config_cache: string;
-		npm_lifecycle_script: string;
-		XDG_DATA_DIRS: string;
-		VSCODE_GIT_IPC_HANDLE: string;
-		GEM_PATH: string;
->>>>>>> 85187d1 (add)
 		RUBY_ROOT: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
@@ -329,9 +223,9 @@ declare module '$env/dynamic/private' {
 		HOMEBREW_CELLAR: string;
 		RUBYOPT: string;
 		RUBY_VERSION: string;
-		COLORTERM: string;
-		npm_config_prefix: string;
 		npm_node_execpath: string;
+		npm_config_prefix: string;
+		COLORTERM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
